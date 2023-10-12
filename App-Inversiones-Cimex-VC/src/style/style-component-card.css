@@ -23,9 +23,9 @@
 .card {
   display: grid;
   place-items: center;
-  min-width: 330px;
-  max-width: 380px;
-  min-height: 480px;
+  min-width: 250px;
+  max-width: 300px;
+  min-height: 420px;
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
