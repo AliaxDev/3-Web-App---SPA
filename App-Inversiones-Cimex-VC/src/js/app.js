@@ -1,8 +1,12 @@
+//import DATA
+
 
 // ********** set date ************
 // select span
-const date = document.getElementById("date");
-date.innerHTML = new Date().getFullYear();
+const date1 = document.getElementById("dateServ");
+const date2 = document.getElementById("date");
+date1.innerHTML = new Date().getFullYear();
+date2.innerHTML = new Date().getFullYear();
 
 // ********** close links ************
 const navToggle = document.querySelector(".nav-toggle");
@@ -28,12 +32,12 @@ const topLink = document.querySelector(".top-link");
 window.addEventListener("scroll", function () {
   const scrollHeight = window.pageYOffset;
   const navHeight = navbar.getBoundingClientRect().height;
-  if (scrollHeight > navHeight) { 
+  if (scrollHeight > navHeight) {
     navbar.classList.add("fixed-nav");
   } else {
     navbar.classList.remove("fixed-nav");
   }
-  
+
   // setup back to top link
   if (scrollHeight > 500) {
     topLink.classList.add("show-link");
@@ -75,9 +79,11 @@ scrollLinks.forEach((link) => {
 });
 // calculate heights
 
+//********* tabs-about **************/
 const about = document.querySelector(".about");
 const btns = document.querySelectorAll(".tab-btn");
 const articles = document.querySelectorAll(".content");
+
 about.addEventListener("click", function (e) {
   const id = e.target.dataset.id;
   if (id) {
@@ -94,3 +100,103 @@ about.addEventListener("click", function (e) {
     element.classList.add("active");
   }
 });
+
+
+//******** DATA-team *********/
+const data = [
+  {
+    img: '../file/img/team-1.webp',
+    name: 'Leandro E.Pérez',
+    job: 'Arquitecto',
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quoeius recusandae officia voluptas sint deserunt dicta nihil nam omnis? `,
+  },
+  {
+    img: './',
+    name: 'Danivia Palamaz Moreno',
+    job: 'Ing. Industrial',
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quoeius recusandae officia voluptas sint deserunt dicta nihil nam omnis?`,
+  },
+  {
+    img: './',
+    name: 'Dianet Cabanes Martinez',
+    job: 'Arquitecta',
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quoeius recusandae officia voluptas sint deserunt dicta nihil nam omnis?`,
+  },
+];
+//************************************************************************************************************************************************************** */
+
+// ********** slider-team ************
+const sliderContainer = document.querySelector('.slider-container')
+const nextBtn = document.querySelector('.slider-next-btn')
+const prevBtn = document.querySelector('.slider-prev-btn')
+// if length is 1 hide buttons
+if (data.length === 1) {
+  nextBtn.style.display = 'none'
+  prevBtn.style.display = 'none'
+}
+// if length is 2, add copies of slides
+let people = [...data]
+if (data.length === 2) {
+  people = [...data, ...data]
+}
+sliderContainer.innerHTML = people.map((person, slideIndex) => {
+  const { img, name, job, text } = person;
+  let position = 'next-slider';
+  if (slideIndex === 0) {
+    position = 'active-slider';
+  }
+  if (slideIndex === people.length - 1) {
+    position = 'last-slider';
+  }
+  if (data.length <= 1) {
+    position = 'active-slider';
+  }
+  return `<article class="slider ${position}">
+              <img src=${img} class="slider-img" alt="${name}"/>
+              <h4>${name}</h4>
+              <p class="slider-title">${job}</p>
+              <p class="slider-text">${text}</p>
+              <div class="quote-icon">
+              <i class="fas fa-quote-right"></i>
+            </div>
+          </article>`;
+}).join('');
+
+const startSlider = (type) => {
+  // get all three slides active,last next
+  const active = document.querySelector('.active-slider')
+  const last = document.querySelector('.last-slider')
+  let next = active.nextElementSibling
+  if (!next) {
+    next = sliderContainer.firstElementChild
+  }
+  active.classList.remove('active-slider')
+  last.classList.remove('last-slider')
+  next.classList.remove('next-slider')
+
+  if (type === 'prev') {
+    active.classList.add('next-slider')
+    last.classList.add('active-slider')
+    next = last.previousElementSibling
+    if (!next) {
+      next = sliderContainer.lastElementChild
+    }
+    next.classList.remove('next-slider')
+    next.classList.add('last-slider')
+    return
+  }
+  active.classList.add('last-slider')
+  last.classList.add('next-slider')
+  next.classList.add('active-slider')
+}
+nextBtn.addEventListener('click', () => {
+  startSlider()
+})
+prevBtn.addEventListener('click', () => {
+  startSlider('prev')
+})
+
+
+
+
+

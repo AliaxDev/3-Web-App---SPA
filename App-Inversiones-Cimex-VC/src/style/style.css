@@ -70,10 +70,10 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-
+/*============ BODY =================*/
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
+  background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -128,11 +128,6 @@ p {
 }
 span {
   color: var(--clr-red-dark);
-}
-
-.section-footer{
-  height: 0.5rem;
-
 }
 
 /*
@@ -728,10 +723,6 @@ header {
   height: auto;
 }
 
-#services {
-  background: var(--clr-white);
-}
-
 footer {
   display: flex;
   background: var(--clr-grey-1);
@@ -790,7 +781,7 @@ About
 */
 .title {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 .title p {
   width: 80%;
@@ -802,7 +793,7 @@ About
 }
 .about-img img {
   border-radius: var(--radius);
-  object-fit: cover;
+  object-fit: contain;
   height: 20rem;
 }
 @media screen and (min-width: 992px) {
@@ -814,6 +805,19 @@ About
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {  
+
+  .btn-container button{
+    font-size: 0.8rem;
+    letter-spacing: 0;
+    padding: 1rem;
+  }
+  .about-content {
+    padding: 0.5rem 0.5rem;
+    text-align: center;
   }
 }
 .about {
@@ -852,7 +856,7 @@ About
 .about-content {
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
-  padding: 2rem 1.5rem;
+  padding: 2rem 2rem;
 }
 /* hide content */
 .content {
@@ -864,3 +868,4 @@ About
 .content.active {
   display: block;
 }
+

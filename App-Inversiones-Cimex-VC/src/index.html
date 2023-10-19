@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./style/style-component-card.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/style-carousel-inf.css">
+    <link rel="stylesheet" href="./style/style-slider-team.css">
+
 
 </head>
 
@@ -72,40 +74,37 @@
                 <div class="title">
                     <h2>Acerca <span>De</span></h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-                        aperiam!
+                        Saludos! Es un Placer tenerlo en nuestro sitio, no Dude en Revisar Nuestro Contenido...
                     </p>
                 </div>
 
                 <div class="about-center section-center">
                     <article class="about-img">
-                        <img src="./hero-bcg.jpeg" alt="" />
+                        <img src="../file/img/animation-about.gif" alt="" />
                     </article>
                     <article class="about">
                         <!-- btn container -->
                         <div class="btn-container">
-                            <button class="tab-btn active" data-id="history">history</button>
-                            <button class="tab-btn" data-id="vision">vision</button>
-                            <button class="tab-btn" data-id="goals">goals</button>
+                            <button class="tab-btn active" data-id="history">historia</button>
+                            <button class="tab-btn" data-id="vision">visión</button>
+                            <button class="tab-btn" data-id="goals">objetivos</button>
                         </div>
                         <div class="about-content">
                             <!-- single item -->
                             <div class="content active" id="history">
-                                <h4>history</h4>
+                                <h4>historia</h4>
                                 <p>
                                     I'm baby wolf pickled schlitz try-hard normcore marfa man bun
                                     mumblecore vice pop-up XOXO lomo kombucha glossier bicycle
                                     rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard
                                     tilde try-hard, woke fixie banjo man bun. Small batch tumeric
-                                    mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral
-                                    direct trade hoodie ugh chambray, craft beer pork belly flannel
-                                    tacos single-origin coffee art party migas plaid pop-up.
+                                    mustache tbh wayfarers 8-bit shaman chartreuse tacos.
                                 </p>
                             </div>
                             <!-- end of single item -->
                             <!-- single item -->
                             <div class="content" id="vision">
-                                <h4>vision</h4>
+                                <h4>visión</h4>
                                 <p>
                                     Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth
                                     crucifix offal deep v hella biodiesel. Church-key listicle
@@ -113,20 +112,12 @@
                                     tattooed meggings franzen la croix cray. Retro yr aesthetic four
                                     loko tbh helvetica air plant, neutra palo santo tofu mumblecore.
                                     Hoodie bushwick pour-over jean shorts chartreuse shabby chic.
-                                    Roof party hammock master cleanse pop-up truffaut, bicycle
-                                    rights skateboard affogato readymade sustainable deep v
-                                    live-edge schlitz narwhal.
                                 </p>
-                                <ul>
-                                    <li>list item</li>
-                                    <li>list item</li>
-                                    <li>list item</li>
-                                </ul>
                             </div>
                             <!-- end of single item -->
                             <!-- single item -->
                             <div class="content" id="goals">
-                                <h4>goals</h4>
+                                <h4>objetivos</h4>
                                 <p>
                                     Chambray authentic truffaut, kickstarter brunch taxidermy vape
                                     heirloom four dollar toast raclette shoreditch church-key.
@@ -134,23 +125,45 @@
                                     everyday carry blog gastropub. Brunch biodiesel sartorial mlkshk
                                     swag, mixtape hashtag marfa readymade direct trade man braid
                                     cold-pressed roof party. Small batch adaptogen coloring book
-                                    heirloom. Letterpress food truck hammock literally hell of wolf
-                                    beard adaptogen everyday carry. Dreamcatcher pitchfork yuccie,
-                                    banh mi salvia venmo photo booth quinoa chicharrones.
+                                    heirloom.
                                 </p>
                             </div>
                             <!-- end of single item -->
                         </div>
                     </article>
+                    <!-- slider-team -->
+
                 </div>
             </section>
 
+        </div>
+
+        <div class="about-container-slider-team">
+            <section class="section-slider">
+                <div class="reviews">
+                    <h2><span>/</span>Nuestro Equipo</h2>
+                </div>
+                <div class="slider-container">
+
+                    <!-- generate with js-->
+
+                </div>
+                <!-- buttons -->
+                <!-- prev btn -->
+                <button class="slider-btn slider-prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <!-- next button -->
+                <button class="slider-btn slider-next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </section>
         </div>
     </section>
     <!-- obras -->
     <section id="services" class="section">
         <div class="title">
-            <h2>Obras <span>2024</span></h2>
+            <h2>Obras <span id="dateServ"></span></h2>
         </div>
         <div class="article-container">
             <article class="card">
@@ -224,6 +237,20 @@
                     </div>
                 </div>
             </article>
+            <article class="card">
+                <img class="card__background" src="../file/img/10059-consultor-1920x1080.webp" alt="Imagen" width="1920"
+                    height="2193" />
+                <div class="card__content | flow">
+                    <div class="card__content--container | flow">
+                        <h2 class="card__title"><span>Sist.Proteción</span><br>Varios</h2>
+                        <p class="card__description">
+                            Malásia (em inglês e malaio: Malaysia
+                            ) é um país do Sudeste Asiático que
+                            compreende dois territórios distintos:
+                        </p>
+                    </div>
+                </div>
+            </article>
         </div>
 
     </section>
@@ -236,7 +263,7 @@
     </section>
     <!-- carrusel-inf -->
     <div class="carrusel-container">
-        <div class="slider">
+        <div class="slide">
             <div class="slide-track">
                 <div class="slide1">
                 </div>
