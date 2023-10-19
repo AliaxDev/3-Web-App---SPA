@@ -121,16 +121,16 @@ Slider Styles
 @media screen and (min-width: 768px) {
 
   .slider-next-btn {
-    right: 5rem;
+    right: 8rem;
   }
 
   .slider-prev-btn {
-    left: 5rem;
+    left: 8rem;
   }
 
   .slider-btn {
     font-size: 1.3rem;
-    padding: 1rem 0.8rem;
+    padding: 1rem 0.5rem;
   }
 
   .quote-icon {
@@ -138,14 +138,14 @@ Slider Styles
   }
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (max-width: 420px) {
 
   .slider-next-btn {
-    right: 2.5rem;
+    right: -1rem;
   }
 
   .slider-prev-btn {
-    left: 2.5rem;
+    left: -1rem;
   }
 
   .slider-btn {
@@ -158,7 +158,7 @@ Slider Styles
   }
 
   .reviews h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
