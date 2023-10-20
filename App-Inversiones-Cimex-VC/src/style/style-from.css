@@ -1,10 +1,3 @@
-body{
-	color: #333;
-	font-family: "Roboto", Helvetica, Arial, Verdana, sans-serif;
-	background: #fff;
-  margin: 0;
-  paddign: 0;
-}
 
 /* Style for text
 * --------------------------------------- */
@@ -50,7 +43,7 @@ textarea {
   display: block;
 }
 #section p a{
-	color: #00B16A;
+	color: var(--clr-red-dark);
   text-decoration: none;
 }
 #section .wrap {
@@ -73,7 +66,7 @@ textarea {
   border: none;
   width: 100%;
   height: 60px;
-  border-bottom: 2px solid #00b16a;
+  border-bottom: 2px solid var(--clr-red-dark);
   margin: 0;
   position: relative;
   margin-bottom: 20px;
@@ -83,7 +76,7 @@ textarea {
   transition: all 0.3s ease-out;
 }
 .contact-form .input-block.focus {
-  
+  /*null*/
 }
 .contact-form .input-block.textarea {
   height: auto;
@@ -100,7 +93,7 @@ textarea {
   margin: 0;
   font-weight: 400;
   z-index: 1;
-  color: #aaa;
+  color: var(--clr-grey-5);
   font-size: 18px;
   line-height: 10px;
 }
@@ -116,23 +109,24 @@ textarea {
   -webkit-box-shadow: none;
   box-shadow: none;
   height: auto;
-    padding: 30px 10px;
+  padding: 30px 10px;
   width: 100%;
   position: relative;
   z-index: 2;
   font-size: 18px;
-  color: #333;
+  color: var(--clr-black);
 }
 .contact-form .input-block .form-control:focus label {
   top: 0;
 }
 .contact-form .square-button {
-  background-color: #00B16A;
-  color: #fff;
-  font-size: 26px;
+  border: solid 1px var(--clr-red-dark);
+  color: var(--clr-grey-5);
+  font-size: 20px;
+  color: var(--clr-red-dark);
   text-transform: uppercase;
   font-weight: 700;
-  text-align: center;
+  font-weight: bold;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -144,15 +138,16 @@ textarea {
   height: 60px;
   cursor: pointer;
   outline: none;
-  border: none;
   width: 100%;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  background: transparent;
 }
 .contact-form .square-button:hover, .contact-form .square-button:focus {
   background-color: var(--clr-red-dark);
+  color: var(--clr-white);
   box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
   transform: translateY(-4px);
 }
@@ -177,7 +172,7 @@ textarea {
 
 .contact-wrap {
   padding: 15px;
-  background: #ecf0f1;
+  background: var(--clr-white);
 }
 .contact-wrap h1 {
   background-color: white;
