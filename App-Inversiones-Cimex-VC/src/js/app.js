@@ -110,7 +110,7 @@ const data = [
     text: `Jefa del Grupo de Inversiones<br>..."Déjame contarte el secreto que me ha llevado a logar mis objetivo. Mi fuerza reside únicamente en mi tenacidad...!!`,
   },
   {
-    img: '../file/img/team-2.webp',
+    img: './file/img/team-2.webp',
     name: 'Leandro E.Pérez',
     job: 'Arquitecto',
     text: `Esp.B Construcción e Inversiones<br>"...Todas las personas tienen la disposición de trabajar creativamente. Lo que sucede es que la mayoría jamás lo nota!!"`,
