@@ -101,26 +101,31 @@ about.addEventListener("click", function (e) {
   }
 });
 
-
 //******** DATA-team *********/
 const data = [
-  {
-    img: '../file/img/team-1.webp',
-    name: 'Leandro E.Pérez',
-    job: 'Arquitecto',
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quoeius recusandae officia voluptas sint deserunt dicta nihil nam omnis? `,
-  },
   {
     img: './',
     name: 'Danivia Palamaz Moreno',
     job: 'Ing. Industrial',
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quoeius recusandae officia voluptas sint deserunt dicta nihil nam omnis?`,
+    text: `Jefa del Grupo de Inversiones<br>..."Déjame contarte el secreto que me ha llevado a logar mis objetivo. Mi fuerza reside únicamente en mi tenacidad...!!`,
+  },
+  {
+    img: '../file/img/team-2.webp',
+    name: 'Leandro E.Pérez',
+    job: 'Arquitecto',
+    text: `Esp.B Construcción e Inversiones<br>"...Todas las personas tienen la disposición de trabajar creativamente. Lo que sucede es que la mayoría jamás lo nota!!"`,
   },
   {
     img: './',
     name: 'Dianet Cabanes Martinez',
     job: 'Arquitecta',
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quoeius recusandae officia voluptas sint deserunt dicta nihil nam omnis?`,
+    text: `Esp.B Construcción e Inversiones<br>"...Si una obra es intensa, válida y tiene una idea potente hará que las imperfecciones queden en un segundo plano...."`,
+  },
+  {
+    img: './',
+    name: 'Ania Gonzales Fernandez',
+    job: 'Lic.Contabilidad y Finanzas',
+    text: `Esp.C Económica<br>..."He llevado contabilidad toda una vida, siempre me apacionaron los numeros y las cuentas exactas. Me gusta trabajar en focada en la calidad de mi trabajo, nunca dejo nada para mañana!...`,
   },
 ];
 //************************************************************************************************************************************************************** */

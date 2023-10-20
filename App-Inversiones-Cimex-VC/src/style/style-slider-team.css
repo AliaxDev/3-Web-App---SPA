@@ -79,7 +79,7 @@ Slider Styles
 }
 
 .slider-text {
-  color: var(--clr-grey-2);
+  color: var(--clr-grey-1);
   line-height: 1.8;
   max-width: 35em;
   margin: 0 auto;
@@ -95,7 +95,7 @@ Slider Styles
 .quote-icon {
   font-size: 3rem;
   margin-top: 2rem;
-  color: var(--clr-primary-5);
+  color: var(--clr-grey-2);
 }
 
 /* set buttons */
@@ -166,6 +166,7 @@ Slider Styles
 }
 
 /* MORE CSS FOR JS */
+
 .slider-container {
   position: relative;
   height: 35rem;
