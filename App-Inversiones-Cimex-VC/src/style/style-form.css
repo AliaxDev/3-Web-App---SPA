@@ -77,66 +77,77 @@
 
 }
 
+/* form style */
 
-
-
-
-
-
-
-.contactform {
-  width: 40%;
-  padding: 40px;
-  background: #fff;
+.form-intro {
+  width: 100%;
+  background: #d1d0d0c5;
   border-radius: 5px;
+  padding: 1.5rem;
+  box-sizing: border-box;
 }
 
-.contactform h2 {
-  font-size: 30px;
+.form-heading h2 {
+  font-size: 1.2rem;
   color: #333;
-  font-weight: 500;
+  font-weight: bold;
 }
 
-.contactform .inputBox {
+.contact-form {
+  width: 100%;
   position: relative;
-  width: 100%;
-  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.input-box {
+  position: relative;
+  padding-left: 20px;
 }
 
-.contactform .inputBox input,
-.contactform .inputBox textarea {
-  width: 100%;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
+.input-box .form-control {
+  position: relative;
+  width: 90%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  font-size: 1em;
+  margin: 1rem 0;
   border: none;
-  border-bottom: 1px solid #263849;
+  border-bottom: 1px solid #c71e1e;
   outline: none;
+  box-shadow: none;
   resize: none;
-}
-
-.contactform .inputBox span {
-  position: absolute;
-  left: 0;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
-  pointer-events: none;
   transition: 0.5s;
-  color: #666;
 }
 
-.contactform .inputBox input:focus~span,
-.contactform .inputBox input:valid~span,
-.contactform .inputBox textarea:focus~span,
-.contactform .inputBox input:valid~span {
+.input-box span {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  padding: 20px 10px  0px 10px;
+  pointer-events: none;
+  color: #000;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.input-box .form-control:focus~span,
+.input-box .form-control:valid~span,
+.input-box .form-control:focus~span,
+.input-box .form-control:valid~span {
   color: #263849;
   font-size: 12px;
-  transform: translateY(-20px);
+  transform: translateY(-25px);
+  font-weight: normal;
+  transition: 0.5s ease-out;
 }
 
-.contactform .inputBox input[type="submit"] {
-  width: 100px;
+.form-grup .input-box input[type="submit"] {
+  width: 80%;
   background: #263849;
   color: #fff;
   border: none;

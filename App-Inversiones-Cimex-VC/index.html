@@ -323,52 +323,59 @@
 
             <!-- form-gif -->
             <article class="contact-me-img">
-                <img src="./file/img/animation-contact.gif" alt="animation-contact.gif"/>
+                <img src="./file/img/animation-contact.gif" alt="animation-contact.gif" />
             </article>
 
             <!-- form -->
             <div class="form-container">
                 <!-- Formulary -->
-                <form id="contactform" class="embed-contact-form">
-
-                    <div class="form-heading">Escribenos!</div>
-                    <hr>
+                <form id="contactform" class="contact-form">
+                    <!-- title -->
+                    <div class="form-heading">
+                        <h2>Escribenos!</h2>
+                    </div>
                     <!-- Message Success -->
                     <div class="form-message hide" style="display: none;">
                         Your message has been sent successfully!
                     </div>
-
-                    <div class="form-content">
+                    <!-- FORM -->
+                    <div class="form-intro">
                         <!-- name -->
                         <div class="form-group">
                             <label for="name" class="empty"></label>
-                            <div><input id="name" name="name" placeholder="Your Name" class="form-control" required="">
+                            <div class="input-box"">
+                                <input id=" name" name="name" class="form-control" required="">
+                                <span>Nombre</span>
                             </div>
                         </div>
                         <!-- email -->
                         <div class="form-group">
                             <label for="email" class="empty"></label>
-                            <div><input name="email" placeholder="Your Email" class="form-control" type="email"
-                                    required="">
+                            <div class="input-box">
+                                <input name="email" class="form-control" type="email" required="">
+                                <span>Correo</span>
                             </div>
                         </div>
                         <!-- phone -->
                         <div class="form-group">
                             <label for="phone" class="empty"></label>
-                            <div><input name="phone" placeholder="Your Phone" class="form-control" type="text"
-                                    required="">
+                            <div class="input-box">
+                                <input name="phone" class="form-control" type="text" required="">
+                                <span>Teléfono</span>
                             </div>
                         </div>
                         <!-- message -->
                         <div class="form-group">
                             <label for="message" class="empty"></label>
-                            <div><textarea id="message" name="comment" placeholder="Your Message" class="form-control"
-                                    rows="5"></textarea></div>
+                            <div class="input-box">
+                                <textarea id="message" name="comment" class="form-control" rows="5"></textarea>
+                                <span>Escribe un Mensaje!</span>
+                            </div>
                         </div>
                         <!-- submit -->
                         <div class="form-group">
                             <label class="empty"></label>
-                            <div>
+                            <div class="input-box">
                                 <button class="btn-submit" type="submit">Send Message</button>
                             </div>
                             <div id="loading-image" class="text-center" style="display: none">Loading...</div>
