@@ -160,7 +160,7 @@ const data = [
     img: './file/img/team-4.webp',
     name: 'Ania Gonzales Fernandez',
     job: 'Lic.Contabilidad y Finanzas',
-    text: `Esp.C Económica<br><br>..."He llevado contabilidad toda una vida. Me gusta trabajar en focada en la calidad de mi trabajo, nunca dejo nada para mañana!...`,
+    text: `Esp.C Económica<br><br>..."Me gusta trabajar en focada en la calidad de mi trabajo, nunca dejo nada para mañana!...`,
   },
 ];
 //************************************************************************************************************************************************************** */
