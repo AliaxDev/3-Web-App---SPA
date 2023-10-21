@@ -21,12 +21,16 @@ Slider Styles
 ===============
 */
 .section-slider {
-  width: 80vw;
+  width: 70vw;
   max-width: var(--fixed-width);
   margin: 0 auto;
   margin-top: 1rem;
   text-align: center;
   padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   
   /* set relative for buttons */
   position: relative;
@@ -56,7 +60,6 @@ Slider Styles
   border: 1px solid var(--clr-grey-6);
   background: var(--clr-white);
   padding: 0.25rem;
-  margin-bottom: 1.2rem;
   border-radius: 50%;
   box-shadow: var(--dark-shadow);
 }
@@ -121,11 +124,11 @@ Slider Styles
 @media screen and (min-width: 768px) {
 
   .slider-next-btn {
-    right: 8rem;
+    right: 10rem;
   }
 
   .slider-prev-btn {
-    left: 8rem;
+    left: 10rem;
   }
 
   .slider-btn {
@@ -141,11 +144,11 @@ Slider Styles
 @media screen and (max-width: 420px) {
 
   .slider-next-btn {
-    right: -1rem;
+    right: 1.5rem;
   }
 
   .slider-prev-btn {
-    left: -1rem;
+    left: 1.5rem;
   }
 
   .slider-btn {
@@ -163,6 +166,10 @@ Slider Styles
     align-items: center;
     justify-content: center;
   }
+
+  .section-slider {
+    width: 95vw;
+  }
 }
 
 /* MORE CSS FOR JS */
@@ -170,7 +177,7 @@ Slider Styles
 .slider-container {
   position: relative;
   height: 35rem;
-  width: 100%;
+  width: 80%;
   overflow: hidden;
   display: flex;
   align-items: center;

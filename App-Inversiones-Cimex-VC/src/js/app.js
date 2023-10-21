@@ -14,6 +14,7 @@ const linksContainer = document.querySelector(".links-container");
 const links = document.querySelector(".links");
 
 navToggle.addEventListener("click", function () {
+  // linksContainer.classList.toggle("show-links");
 
   const linksHeight = links.getBoundingClientRect().height;
   const containerHeight = linksContainer.getBoundingClientRect().height;
@@ -26,6 +27,7 @@ navToggle.addEventListener("click", function () {
 });
 
 // ********** fixed navbar ************
+
 const navbar = document.getElementById("nav");
 const topLink = document.querySelector(".top-link");
 
@@ -37,9 +39,11 @@ window.addEventListener("scroll", function () {
   } else {
     navbar.classList.remove("fixed-nav");
   }
-
   // setup back to top link
+
   if (scrollHeight > 500) {
+    console.log("helo");
+
     topLink.classList.add("show-link");
   } else {
     topLink.classList.remove("show-link");
@@ -48,8 +52,39 @@ window.addEventListener("scroll", function () {
 
 // ********** smooth scroll ************
 // select links
+const scrollLink = document.querySelectorAll(".scroll-link");
+scrollLink.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    // prevent default
+    e.preventDefault();
+    // navigate to specific spot
+    const id = e.currentTarget.getAttribute("href").slice(1);
+    const element = document.getElementById(id);
+
+    const navHeight = navbar.getBoundingClientRect().height;
+    const containerHeight = linksContainer.getBoundingClientRect().height;
+    const fixedNav = navbar.classList.contains("fixed-nav");
+    let position = element.offsetTop - navHeight;
+
+    if (!fixedNav) {
+      position = position - navHeight;
+    }
+    if (navHeight > 82) {
+      position = position + containerHeight;
+    }
+
+    window.scrollTo({
+      left: 0,
+      top: position,
+    });
+    // close
+    linksContainer.style.height = 0;
+  });
+});
+// calculate heights
+// select links
 const scrollLinks = document.querySelectorAll(".scroll-link");
-scrollLinks.forEach((link) => {
+scrollLink.forEach((link) => {
   link.addEventListener("click", (e) => {
     // prevent default
     e.preventDefault();
@@ -107,25 +142,25 @@ const data = [
     img: './',
     name: 'Danivia Palamaz Moreno',
     job: 'Ing. Industrial',
-    text: `Jefa del Grupo de Inversiones<br>..."Déjame contarte el secreto que me ha llevado a logar mis objetivo. Mi fuerza reside únicamente en mi tenacidad...!!`,
+    text: `Jefa del Grupo de Inversiones<br><br>..."Déjame contarte el secreto que me ha llevado a logar mis objetivo. Mi fuerza reside únicamente en mi tenacidad...!!`,
   },
   {
-    img: './file/img/team-2.webp',
+    img: './file/img/team-2.jpg',
     name: 'Leandro E.Pérez',
     job: 'Arquitecto',
-    text: `Esp.B Construcción e Inversiones<br>"...Todas las personas tienen la disposición de trabajar creativamente. Lo que sucede es que la mayoría jamás lo nota!!"`,
+    text: `Esp.B Construcción e Inversiones<br><br>"...Todas las personas tienen la disposición de trabajar creativamente. Lo que sucede es que la mayoría jamás lo nota!!"`,
   },
   {
-    img: './',
+    img: './file/img/team-3.jpg',
     name: 'Dianet Cabanes Martinez',
     job: 'Arquitecta',
-    text: `Esp.B Construcción e Inversiones<br>"...Si una obra es intensa, válida y tiene una idea potente hará que las imperfecciones queden en un segundo plano...."`,
+    text: `Esp.B Construcción e Inversiones<br><br>"...Si una obra es intensa, válida y tiene una idea potente hará que las imperfecciones queden en un segundo plano...."`,
   },
   {
-    img: './',
+    img: './file/img/team-4.webp',
     name: 'Ania Gonzales Fernandez',
     job: 'Lic.Contabilidad y Finanzas',
-    text: `Esp.C Económica<br>..."He llevado contabilidad toda una vida, siempre me apacionaron los numeros y las cuentas exactas. Me gusta trabajar en focada en la calidad de mi trabajo, nunca dejo nada para mañana!...`,
+    text: `Esp.C Económica<br><br>..."He llevado contabilidad toda una vida. Me gusta trabajar en focada en la calidad de mi trabajo, nunca dejo nada para mañana!...`,
   },
 ];
 //************************************************************************************************************************************************************** */

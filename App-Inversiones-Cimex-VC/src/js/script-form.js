@@ -1,30 +1,43 @@
-$(document).ready(function(){
-
-	//material contact form
-	$('.contact-form').find('.form-control').each(function() {
-	  var targetItem = $(this).parent();
-	  if ($(this).val()) {
-		$(targetItem).find('label').css({
-		  'top': '10px',
-		  'fontSize': '14px'
-		});
-	  }
-	})
-	$('.contact-form').find('.form-control').focus(function() {
-	  $(this).parent('.input-block').addClass('focus');
-	  $(this).parent().find('label').animate({
-		'top': '10px',
-		'fontSize': '14px'
-	  }, 300);
-	})
-	$('.contact-form').find('.form-control').blur(function() {
-	  if ($(this).val().length == 0) {
-		$(this).parent('.input-block').removeClass('focus');
-		$(this).parent().find('label').animate({
-		  'top': '25px',
-		  'fontSize': '18px'
-		}, 300);
-	  }
-	})
-	
+$("#contactform").validate({
+    rules: {
+        name: "required",
+        email: "required",
+        phone: {
+            required: true,
+            minlength: 10,
+            number: true
+        }
+    },
+    message: {
+        name: "Please enter your name",
+        email: "Please enter your email id",
+        phone: {
+            required: "Please enter mobile no.",
+            minlength: "Please enter valid mobile no."
+        }
+    },
+    /* 
+    submitHandler: function() {
+        $.ajax({
+            url: 'sendform.js',
+            data: $('#contactform').serialize(),
+            type: 'POST',
+            beforeSend: function() {
+                $("#loading-image").show();
+                },
+            success: function(data) {
+                //alert('mail send');
+             $("#loading-image").hide();  
+             $("#success").show().fadeIn(1000);
+             $('#contactform').each(function() {
+              this.reset()
+             })
+            },
+            error: function(data) {
+                alert('error send');
+             $("#error").show().fadeIn(1000)
+            }
+           })
+    }
+    */
 });

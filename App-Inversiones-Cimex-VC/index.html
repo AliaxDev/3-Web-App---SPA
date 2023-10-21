@@ -9,6 +9,8 @@
 
     <!-- meyer-reset -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 
@@ -17,7 +19,7 @@
     <link rel="stylesheet" href="./src/style/style.css">
     <link rel="stylesheet" href="./src/style/style-carousel-inf.css">
     <link rel="stylesheet" href="./src/style/style-slider-team.css">
-    <link rel="stylesheet" href="./src/style/style-from.css">
+    <link rel="stylesheet" href="./src/style/style-form.css">
 
 
 </head>
@@ -48,7 +50,7 @@
                             <a href="#services" class="scroll-link">Obras</a>
                         </li>
                         <li>
-                            <a href="#tours" class="scroll-link">Contacto</a>
+                            <a href="#contact" class="scroll-link">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -60,181 +62,191 @@
                 <h1>Grupo de</h1>
                 <h1>Inversiones <br><span>Villa Clara</span></h1>
                 <p class="slogan">...Por un comercio al Servicio del Pueblo!</p>
-                <a href="#tours" class="scroll-link btn btn-white">Contactenos!</a>
+                <a href="#contact" class="scroll-link btn btn-white">Contactenos!</a>
             </div>
         </div>
     </header>
 
     <!-- about -->
     <section id="about" class="section">
-        <div class="about-container">
-            <section class="section">
-                <div class="title">
-                    <h2>Acerca <span>De</span></h2>
-                    <div class="line-red"></div>
-                    <p>Saludos! Es un Placer tenerlo en nuestro sitio, no Dude en Revisar Nuestro Contenido...</p>
-                </div>
-                <!-- Section Funtions -->
-                <div class="about-funtions">
-                    <div class="service-container">
-                        <h3><span>/</span>Nuestras Funciones</h3>
-                        <div class="row-service">
-                            <div class="about-service">
-                                <i class="fas fa-chart-line"></i>
-                                <h2>Elaborar</h2>
-                                <p>La Propuesta del Plan de Preparación de Inversiones de La Sucursal Cimex Villa Clara
-                                    en el Territorio.</p>
-                            </div>
-                            <div class="about-service">
-                                <i class="fas fa-sitemap"></i>
-                                <h2>Planificar</h2>
-                                <p>En Conjunto con las otras áreas y Unidades de la Sucursal las Inversiones a ejecutar
-                                    en el año y controlar su cumplimiento.</p>
-                            </div>
-                            <div class="about-service">
-                                <i class="fas fa-list-alt"></i>
-                                <h2>Organizar</h2>
-                                <p>El proceso de control y evaluación Tec-Económica del Plan de Inversiones en
-                                    coordinacion con Inversiones CIMEX.</p>
-                            </div>
-                            <div class="about-service">
-                                <i class="fas fa-handshake"></i>
-                                <h2>Coordinar</h2>
-                                <p> En representación de la Sucursal ante las empresas del Territorio y afiliadas, la
-                                    firma de contratos para el Proceso Inversionista.</p>
-                            </div>
-                            <div class="about-service">
-                                <i class="fas fa-desktop"></i>
-                                <h2>Registrar</h2>
-                                <p> La información contable de la Inversiones, emitiendo los Estados Financieros de la
-                                    Actividad Inversionista.</p>
-                            </div>
-                            <div class="about-service">
-                                <i class="fas fa-truck"></i>
-                                <h2>Gestionar</h2>
-                                <p>La adquisición y remplazo de activos fijos en estado de baja técnica y la
-                                    distribucion de nuevas reposiciones en el Territorio.</p>
-                            </div>
+        <section class="section">
+            <div class="title">
+                <h2>Acerca <span>De</span></h2>
+                <div class="line-red"></div>
+                <p>Saludos! Es un Placer tenerlo en nuestro sitio, no Dude en Revisar Nuestro Contenido...</p>
+            </div>
+            <!-- Section Funtions -->
+            <div class="about-funtions">
+                <div class="service-container">
+                    <h3><span>/</span>Nuestras Funciones</h3>
+                    <div class="row-service">
+                        <div class="about-service">
+                            <i class="fas fa-chart-line"></i>
+                            <h2>Elaborar</h2>
+                            <p>La Propuesta del Plan de Preparación de Inversiones de La Sucursal Cimex Villa Clara
+                                en el Territorio.</p>
+                        </div>
+                        <div class="about-service">
+                            <i class="fas fa-sitemap"></i>
+                            <h2>Planificar</h2>
+                            <p>En Conjunto con las otras áreas y Unidades de la Sucursal las Inversiones a ejecutar
+                                en el año y controlar su cumplimiento.</p>
+                        </div>
+                        <div class="about-service">
+                            <i class="fas fa-list-alt"></i>
+                            <h2>Organizar</h2>
+                            <p>El proceso de control y evaluación Tec-Económica del Plan de Inversiones en
+                                coordinacion con Inversiones CIMEX.</p>
+                        </div>
+                        <div class="about-service">
+                            <i class="fas fa-handshake"></i>
+                            <h2>Coordinar</h2>
+                            <p> En representación de la Sucursal ante las empresas del Territorio y afiliadas, la
+                                firma de contratos para el Proceso Inversionista.</p>
+                        </div>
+                        <div class="about-service">
+                            <i class="fas fa-desktop"></i>
+                            <h2>Registrar</h2>
+                            <p> La información contable de la Inversiones, emitiendo los Estados Financieros de la
+                                Actividad Inversionista.</p>
+                        </div>
+                        <div class="about-service">
+                            <i class="fas fa-truck"></i>
+                            <h2>Gestionar</h2>
+                            <p>La adquisición y remplazo de activos fijos en estado de baja técnica y la
+                                distribucion de nuevas reposiciones en el Territorio.</p>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- carrusel-inf -->
-                <div class="carrusel-container">
-                    <div class="slide">
-                        <div class="slide-track">
-                            <div class="slide1">
-                            </div>
-                            <div class="slide2">
-                            </div>
-                            <div class="slide3">
-                            </div>
-                            <div class="slide4">
-                            </div>
-                            <div class="slide5">
-                            </div>
-                            <div class="slide6">
-                            </div>
-                            <div class="slide7">
-                            </div>
-                            <div class="slide8">
-                            </div>
-                            <div class="slide9">
-                            </div>
-                            <div class="slide10">
-                            </div>
-                            <div class="slide11">
-                            </div>
-                            <div class="slide12">
-                            </div>
+            <!-- carrusel-inf -->
+            <div class="carrusel-container">
+                <div class="slide">
+                    <div class="slide-track">
+                        <div class="slide1">
+                        </div>
+                        <div class="slide2">
+                        </div>
+                        <div class="slide3">
+                        </div>
+                        <div class="slide4">
+                        </div>
+                        <div class="slide5">
+                        </div>
+                        <div class="slide6">
+                        </div>
+                        <div class="slide7">
+                        </div>
+                        <div class="slide8">
+                        </div>
+                        <div class="slide9">
+                        </div>
+                        <div class="slide10">
+                        </div>
+                        <div class="slide11">
+                        </div>
+                        <div class="slide12">
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="about-center section-center">
-                    <article class="about-img">
-                        <img src="./file/img/pc-time.gif" alt="" />
-                    </article>
-                    <article class="about">
-                        <!-- btn container -->
-                        <div class="btn-container">
-                            <button class="tab-btn active" data-id="history">historia</button>
-                            <button class="tab-btn" data-id="vision">visión</button>
-                            <button class="tab-btn" data-id="goals">objetivos</button>
+            <div class="about-center section-center">
+                <article class="about-img">
+                    <img src="./file/img/pc-time.gif" alt="" />
+                </article>
+                <article class="about">
+                    <!-- btn container -->
+                    <div class="btn-container">
+                        <button class="tab-btn active" data-id="history">historia</button>
+                        <button class="tab-btn" data-id="vision">visión</button>
+                        <button class="tab-btn" data-id="goals">objetivos</button>
+                    </div>
+                    <div class="about-content">
+                        <!-- single item -->
+                        <div class="content active" id="history">
+                            <h4>historia</h4>
+                            <p>
+                                Nuesta Sucursal CIMEX Villa Clara surge en noviembre de 1993, con la Tienda Variedades
+                                Riviera,
+                                continuando su desarrollo por toda la provincia no solo con servicios de tienda sino
+                                también con los de Servi Cupet y Rápidos, convirtiéndose hoy en una de las
+                                provincias más recaudadoras del país. La Sucursal fue constituida por acuerdo 45 de la
+                                Asamblea General de Accionistas de la Corporación CIMEX SA de fecha 29
+                                de noviembre de 2002, protocolizada mediante Escritura Pública otorgada en la
+                                Notaría Especial perteneciente al Ministerio de Justicia, en fecha 30 de diciembre
+                                de 2002, bajo el número de orden de su protocolo 7449.<br>
+
+                                Existen en la actualidad un total de 22 Tiendas, 54 Servicentros, 13 Rápidos, 2
+                                Phototervice, 31 Puntos de Venta y 1 Dutty Free. La actividad mayorista posee una
+                                tienda en el municipio Santa Clara.
+
+                            </p>
                         </div>
-                        <div class="about-content">
-                            <!-- single item -->
-                            <div class="content active" id="history">
-                                <h4>historia</h4>
-                                <p>
-                                    Nuesta Sucursal CIMEX Villa Clara surge en noviembre de 1993, con la Tienda Variedades Riviera,
-                                    continuando su desarrollo por toda la provincia no solo con servicios de tienda sino
-                                    también con los de Servi Cupet y Rápidos, convirtiéndose hoy en una de las
-                                    provincias más recaudadoras del país. La Sucursal fue constituida por acuerdo 45 de la Asamblea General de Accionistas de la Corporación CIMEX SA de fecha 29
-                                    de noviembre de 2002, protocolizada mediante Escritura Pública otorgada en la
-                                    Notaría Especial perteneciente al Ministerio de Justicia, en fecha 30 de diciembre
-                                    de 2002, bajo el número de orden de su protocolo 7449.<br>
-
-                                    Existen en la actualidad un total de 22 Tiendas, 54 Servicentros, 13 Rápidos, 2
-                                    Phototervice, 31 Puntos de Venta y 1 Dutty Free. La actividad mayorista posee una
-                                    tienda en el municipio Santa Clara.
-
-                                </p>
-                            </div>
-                            <!-- end of single item -->
-                            <!-- single item -->
-                            <div class="content" id="vision">
-                                <h4>visión</h4>
-                                <p>
-                                    El proposito de nuestro es fuerzo es lograr el liderazgo en el de mercado del territorio con inversiones novedosas y factibles en consecuencia a las crisis que puedan presentarse...<br>
-                                    Lograr que los niveles de satisfacción de los clientes y trabajadores esan elevados a tal punto...que nos GANEMOS SU PREFERECIA!<br>
-                                    <br>
-                                    <i>...Por un Comercio Responsable al Servicio del Pueblo!</i>
-                                </p>
-                            </div>
-                            <!-- end of single item -->
-                            <!-- single item -->
-                            <div class="content" id="goals">
-                                <h4>objetivos</h4>
-                                <p>
-                                    ○ Consevir Inversiones Novedosas y Factibles.<br><br>
-                                    ○ Potencial el comercio de bienes y servicios para satisfacer las necesidades de los clientes.<br><br>
-                                    ○ Mantener los estandares de nuestra Corporación y lograr servicios durades y de proimera calidad.<br><br>
-                                    ○ Crear servicios mas modernos y refinados a la altura de los estandares Internacionales.<br><br>
-                                    ○ Lograr Obras con un alto nivel estetico y un marcado enfasis con nuestras estrategias de marketing y publicidad.
-                                </p>
-                            </div>
-                            <!-- end of single item -->
+                        <!-- end of single item -->
+                        <!-- single item -->
+                        <div class="content" id="vision">
+                            <h4>visión</h4>
+                            <p>
+                                El proposito de nuestro es fuerzo es lograr el liderazgo en el de mercado del territorio
+                                con inversiones novedosas y factibles en consecuencia a las crisis que puedan
+                                presentarse...<br><br>
+                                Lograr que los niveles de satisfacción de los clientes y trabajadores esan elevados a
+                                tal punto...que nos GANEMOS SU PREFERECIA!<br>
+                                <br>
+                                <i>...Por un Comercio Responsable al Servicio del Pueblo!</i>
+                            </p>
                         </div>
-                    </article>
-                </div>
+                        <!-- end of single item -->
+                        <!-- single item -->
+                        <div class="content" id="goals">
+                            <h4>objetivos</h4>
+                            <p>
+                                ○ Consevir Inversiones Novedosas y Factibles.<br><br>
+                                ○ Potencial el comercio de bienes y servicios para satisfacer las necesidades de
+                                losclientes.<br><br>
+                                ○ Lograr Obras con un alto nivel estético y con publicidad enfocada en nuestras
+                                estrategias
+                                de marketing especializado.<br><br>
+                                ○ Mantener los estandares de nuestra Corporación y lograr servicios durables y de
+                                primera calidad.<br><br>
+                                ○ Crear servicios mas modernos y refinados a la altura de los estandares
+                                Internacionales.
+                            </p>
+                        </div>
+                        <!-- end of single item -->
+                    </div>
+                </article>
+            </div>
 
 
-            </section>
-        </div>
 
-        <!-- slider-team -->
-        <div class="about-container-slider-team">
-            <section class="section-slider">
-                <div class="reviews">
-                    <h2><span>/</span>Nuestro Equipo</h2>
-                </div>
-                <div class="slider-container">
+            </div>
 
-                    <!-- generate with js-->
+            <!-- slider-team -->
+            <div class="about-container-slider-team">
+                <section class="section-slider">
+                    <div class="reviews">
+                        <h2><span>/</span>Nuestro Equipo</h2>
+                    </div>
+                    <div class="slider-container">
 
-                </div>
-                <!-- buttons -->
-                <!-- prev btn -->
-                <button class="slider-btn slider-prev-btn">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <!-- next button -->
-                <button class="slider-btn slider-next-btn">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </section>
-        </div>
+                        <!-- generate with js-->
+
+                    </div>
+                    <!-- buttons -->
+                    <!-- prev btn -->
+                    <button class="slider-btn slider-prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <!-- next button -->
+                    <button class="slider-btn slider-next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </section>
+            </div>
+        </section>
     </section>
     <!-- obras -->
     <section id="services" class="section">
@@ -250,7 +262,8 @@
                     <div class="card__content--container | flow">
                         <h2 class="card__title"><span>Serv. Centro</span> Quemadense</h2>
                         <p class="card__description">
-                            La inversion perimitirá crear un Servi Cupe en el Municipio de Quemado de Guines para potenciar el circuito norte de la Provincia de Villa Clara.
+                            La inversion perimitirá crear un Servi Cupe en el Municipio de Quemado para
+                            potenciar el circuito norte en Villa Clara.
                         </p>
                     </div>
                 </div>
@@ -262,7 +275,8 @@
                     <div class="card__content--container | flow">
                         <h2 class="card__title"><span>Serv. Centro</span><br>P.Figueredo</h2>
                         <p class="card__description">
-                            La inversion consiste en reparar la pista y cercar el Servi Cupe Perucho Figueredo ubicado en el municipio de Calabazar de Sagua.
+                            La inversion consiste en reparar la pista y cercar el SC Perucho Figueredo
+                            ubicado en el municipio de Calabazar.
                         </p>
                     </div>
                 </div>
@@ -274,19 +288,8 @@
                     <div class="card__content--container | flow">
                         <h2 class="card__title"><span>Tienda</span><br>Fin de Siglo</h2>
                         <p class="card__description">
-                            La inversión tiene como objetivo la reconstrucción de la antigua Tienda Fin de Siglo en el Municipio de Caibarien.
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <article class="card">
-                <img class="card__background" src="./file/img/10059-consultor-1920x1080.webp" alt="Imagen" width="1920"
-                    height="2193" />
-                <div class="card__content | flow">
-                    <div class="card__content--container | flow">
-                        <h2 class="card__title"><span>Otras</span><br>Pista CTT.VC</h2>
-                        <p class="card__description">
-                            La obra consiste en la pavimentacion de un area de parqueo al aire libre para la creación de un Parque Automotor.
+                            La inversión tiene como objetivo la reconstrucción de la antigua Tienda Fin de Siglo en
+                            el Municipio de Caibarien.
                         </p>
                     </div>
                 </div>
@@ -298,7 +301,8 @@
                     <div class="card__content--container | flow">
                         <h2 class="card__title"><span>Sist.Proteción</span><br>Varios</h2>
                         <p class="card__description">
-                            En el presente año tenemos planificados varios Sistemas de Protección. Información mas detallada en el enlace a contiuación.
+                            En el presente año tenemos planificados varios Sistemas de Protección. Información mas
+                            detallada en el enlace.
                         </p>
                     </div>
                 </div>
@@ -307,62 +311,105 @@
         </div>
 
     </section>
-    <!-- contact -->
-    <section id="tours" class="section">
 
+    <!-- contact -->
+    <section id="contact" class="section">
         <div class="title">
             <h2>Contact<span>enos</span></h2>
         </div>
 
+        <!-- Contact-Me -->
         <div class="contact-me-center">
+
             <!-- form-gif -->
             <article class="contact-me-img">
-                <img src="./file/img/animation-about.gif" alt="" />
+                <img src="./file/img/animation-contact.gif" alt="animation-contact.gif"/>
             </article>
+
             <!-- form -->
-            <article class="contact-me">
+            <div class="form-container">
+                <!-- Formulary -->
+                <form id="contactform" class="embed-contact-form">
 
-                <div class="contact-me-content">
-                    <section class="contact-wrap">
-                        <form action="" class="contact-form">
-                          <div class="col-sm-6">
-                            <div class="input-block">
-                              <label for="">First Name</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="col-sm-6">
-                            <div class="input-block">
-                              <label for="">Last Name</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="input-block">
-                              <label for="">Email</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="input-block">
-                              <label for="">Message Subject</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="input-block textarea">
-                              <label for="">Drop your message here</label>
-                              <textarea rows="3" type="text" class="form-control"></textarea>
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <button class="square-button">Send</button>
-                          </div>
-                        </form>
-                      </section>
+                    <div class="form-heading">Escribenos!</div>
+                    <hr>
+                    <!-- Message Success -->
+                    <div class="form-message hide" style="display: none;">
+                        Your message has been sent successfully!
+                    </div>
 
-                </div>
-            </article>
+                    <div class="form-content">
+                        <!-- name -->
+                        <div class="form-group">
+                            <label for="name" class="empty"></label>
+                            <div><input id="name" name="name" placeholder="Your Name" class="form-control" required="">
+                            </div>
+                        </div>
+                        <!-- email -->
+                        <div class="form-group">
+                            <label for="email" class="empty"></label>
+                            <div><input name="email" placeholder="Your Email" class="form-control" type="email"
+                                    required="">
+                            </div>
+                        </div>
+                        <!-- phone -->
+                        <div class="form-group">
+                            <label for="phone" class="empty"></label>
+                            <div><input name="phone" placeholder="Your Phone" class="form-control" type="text"
+                                    required="">
+                            </div>
+                        </div>
+                        <!-- message -->
+                        <div class="form-group">
+                            <label for="message" class="empty"></label>
+                            <div><textarea id="message" name="comment" placeholder="Your Message" class="form-control"
+                                    rows="5"></textarea></div>
+                        </div>
+                        <!-- submit -->
+                        <div class="form-group">
+                            <label class="empty"></label>
+                            <div>
+                                <button class="btn-submit" type="submit">Send Message</button>
+                            </div>
+                            <div id="loading-image" class="text-center" style="display: none">Loading...</div>
+                            <!-- Send Mail Notification  -->
+                            <div id="success" style="display: none">Mail Send! Successfully!</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="directory-container">
+                <section class="directory">
+                    <div class="contact-box">
+                        <div class="icon"><i class="fa fa-map" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Dirección</h3>
+                            <p>Carretara Central Km 298 banda Esperanza. Villa Clara.<br>Cuba</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Teléfono</h3>
+                            <p>+42 209182</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-box">
+                        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Correo</h3>
+                            <p>lean@cimex.com.cu</p>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
         </div>
         <!-- end of contact-->
     </section>
@@ -374,13 +421,16 @@
             <span id="date"></span>. all rights reserved
         </p>
     </footer>
+
     <a class="scroll-link top-link" href="#home">
         <i class="fas fa-arrow-up"></i>
     </a>
+
     <!-- javascript -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
     <script src="./src/js/script-form.js"></script>
     <script src="./src/js/app.js"></script>
+
 </body>
 
 </html>
