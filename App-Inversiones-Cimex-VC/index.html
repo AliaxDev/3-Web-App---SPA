@@ -344,39 +344,41 @@
                         <div class="form-group">
                             <label for="name" class="empty"></label>
                             <div class="input-box"">
-                                <input id=" name" name="name" class="form-control" required="">
+                                <input id=" name" autocomplete="off" name="name" class="form-control" required="">
                                 <span>Nombre</span>
+                                <i></i>
                             </div>
                         </div>
                         <!-- email -->
                         <div class="form-group">
                             <label for="email" class="empty"></label>
                             <div class="input-box">
-                                <input name="email" class="form-control" type="email" required="">
+                                <input name="email" autocomplete="off" class="form-control" type="text" required="">
                                 <span>Correo</span>
+                                <i></i>
                             </div>
                         </div>
                         <!-- phone -->
                         <div class="form-group">
                             <label for="phone" class="empty"></label>
                             <div class="input-box">
-                                <input name="phone" class="form-control" type="text" required="">
+                                <input name="phone" autocomplete="off" class="form-control" type="text" required="">
                                 <span>Teléfono</span>
+                                <i></i>
                             </div>
                         </div>
                         <!-- message -->
                         <div class="form-group">
                             <label for="message" class="empty"></label>
                             <div class="input-box">
-                                <textarea id="message" name="comment" class="form-control" rows="5"></textarea>
-                                <span>Escribe un Mensaje!</span>
+                                <textarea id="message" autocomplete="off" name="comment" class="form-control" placeholder="Escribe un Mensaje!" prerows="5"></textarea>
                             </div>
                         </div>
                         <!-- submit -->
                         <div class="form-group">
                             <label class="empty"></label>
                             <div class="input-box">
-                                <button class="btn-submit" type="submit">Send Message</button>
+                                <button class="btn-submit" autocomplete="off" type="submit">Enviar Mensaje!</button>
                             </div>
                             <div id="loading-image" class="text-center" style="display: none">Loading...</div>
                             <!-- Send Mail Notification  -->

@@ -728,7 +728,7 @@ header {
 #about,
 #services,
 #contact {
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
 }
 
 .line-red {
@@ -1044,6 +1044,7 @@ About
 
 .contact-me-center {
   width: 100vw;
+  
 }
 
 @media screen and (min-width: 992px) {
@@ -1054,8 +1055,8 @@ About
 
   .contact-me-center {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 2rem;
-    padding: 0 7rem;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 0.5rem;
+    padding: 0 1rem;
   }
 }
