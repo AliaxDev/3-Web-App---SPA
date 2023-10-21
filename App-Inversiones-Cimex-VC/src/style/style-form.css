@@ -206,7 +206,7 @@ textarea:-ms-input-placeholder {
 }
 
 .btn-submit {
-  width: 60%;
+  width: 50%;
   background: var(--clr-red-dark);
   color: var(--clr-white);
   border: none;
