@@ -18,6 +18,8 @@ async function handleSubmit(event) {
             
             formMessage.innerHTML = "<span>Enviado con EXITO!</span>...Gracias por Escribirnos!";
             formMessage.classList.toggle('hiden')
+            formMessage.classList.remove('err')
+            formMessage.classList.add('success')
             console.log("success")
             form.reset()
 
@@ -29,7 +31,9 @@ async function handleSubmit(event) {
                     let err = data["errors"].map(error => error["message"]).join(", ");
 
                     if(err == "should be an email"){
-                        formMessage.innerHTML = `<span>Escriba un Email Valido</span>`;
+                        formMessage.classList.remove('success')
+                        formMessage.classList.add('err')
+                        formMessage.innerHTML = `<span>Oops! Escriba un Email Valido...</span>`;
                     }else {
                         formMessage.innerHTML = `<span>${err}</span>`;
                     }

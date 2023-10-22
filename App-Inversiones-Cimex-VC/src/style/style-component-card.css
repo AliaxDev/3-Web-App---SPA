@@ -28,8 +28,9 @@
   min-height: 420px;
   overflow: hidden;
   border-radius: 5px;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+  border: solid 1px var(--clr-grey-8);
   margin: 15px;
+  cursor: pointer;
 }
 .card__description {
   color: var(--clr-black);
@@ -54,7 +55,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-self: flex-end;
-  border-radius: 25px;
   height: 55%;
   padding: 3% 1.25rem 1.875rem;
   
@@ -84,9 +84,11 @@
 
 @media (any-hover: hover) and (any-pointer: fine) {
   .card__content {
-    transform: translateY(82.7%);
+    border-top: solid 2px var(--clr-red-dark);
+    transform: translateY(80.7%);
     transition: transform 500ms ease-out;
     transition-delay: 500ms;
+    background-color: #ffffff60;
   }
 
   .card__title::after {

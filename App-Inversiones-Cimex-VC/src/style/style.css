@@ -477,7 +477,10 @@ section
   max-width: auto;
   flex-wrap: wrap;
   box-sizing: border-box;
-
+  padding: 1rem;
+  width: 100vw;
+  background: #eee;
+  background-image: linear-gradient(to bottom, #ffffff,#ffffff,var(--clr-grey-9),var(--clr-grey-9),var(--clr-grey-9),var(--clr-grey-9),#ffffff,#fff);
 }
 
 /*
