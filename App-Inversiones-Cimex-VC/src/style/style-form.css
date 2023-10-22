@@ -76,6 +76,20 @@
     font-size: 0.9em;
   }
 
+  .contact-box .shortcut-link {
+    font-size: 10em;
+    color: var(--clr-grey-5);
+    text-decoration: none;
+  }
+
+  .contact-box .shortcut-link:active {
+    color: #000;
+  }
+
+  .contact-box .shortcut-link:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--clr-red-dark);
+  }
 }
 
 /* form style */
@@ -119,7 +133,8 @@
   background: transparent;
   background-color: transparent !important;
   outline: none;
-  box-shadow: none !important;;
+  box-shadow: none !important;
+  ;
   resize: none;
   transition: 0.5s;
   z-index: 2;
@@ -200,7 +215,7 @@ textarea:-ms-input-placeholder {
   pointer-events: none;
 }
 
-.input-box .form-control:focus~i{
+.input-box .form-control:focus~i {
   height: 50px;
   background: #f8c3c3;
 }

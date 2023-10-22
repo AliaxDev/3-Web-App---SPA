@@ -9,7 +9,7 @@ Section Styles
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../../file/img/oficina.jpg);
+  background: url(../../file/img/oficina-panoramica.webp);
   background-position: center;
   background-size: cover;
 }
