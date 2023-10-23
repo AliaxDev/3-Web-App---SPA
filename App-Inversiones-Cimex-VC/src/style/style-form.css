@@ -16,7 +16,7 @@
 }
 
 .directory {
-  padding: 3rem 0 2rem 2rem;
+  padding: 0.5rem 0 2rem 2rem;
 }
 
 .directory .contact-box {
@@ -77,7 +77,7 @@
   }
 
   .contact-box .shortcut-link {
-    font-size: 10em;
+    font-size: 0.8rem;
     color: var(--clr-grey-5);
     text-decoration: none;
   }
@@ -157,7 +157,6 @@ font-weight: bold;
   background-color: transparent !important;
   outline: none;
   box-shadow: none !important;
-  ;
   resize: none;
   transition: 0.5s;
   z-index: 2;
@@ -250,7 +249,7 @@ textarea:-ms-input-placeholder {
   border: none;
   cursor: pointer;
   padding: 10px;
-  font-size: 18px;
+  font-size: 1rem;
   letter-spacing: 0.02em;
   border-radius: 5px;
 }
@@ -260,8 +259,9 @@ textarea:-ms-input-placeholder {
 }
 
 @media (max-width: 991px) {
+
   .contact {
-    padding: 50px;
+    padding: 1rem;
   }
 
   .container {
@@ -269,7 +269,7 @@ textarea:-ms-input-placeholder {
   }
 
   .container .contactInfo {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 
   .container .contactInfo,

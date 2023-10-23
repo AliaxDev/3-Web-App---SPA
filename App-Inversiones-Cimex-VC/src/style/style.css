@@ -595,7 +595,7 @@ nav {
   transition: var(--transition);
 }
 
-.links a:hover:hover {
+.links a:hover {
   color: var(--clr-red-light);
 }
 
@@ -866,7 +866,7 @@ About
 }
 
 .about-service p {
-  font-weight: 400;
+  font-weight: normal;
   margin-bottom: 8px;
 }
 

@@ -960,7 +960,7 @@ About
     text-align: center;
   }
 
-  v .line-red {
+  .line-red {
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: var(--clr-red-dark);
