@@ -33,7 +33,7 @@ async function handleSubmit(event) {
                     if(err == "should be an email"){
                         formMessage.classList.remove('success')
                         formMessage.classList.add('err')
-                        formMessage.innerHTML = `<span>Oops! Escriba un Email Valido...</span>`;
+                        formMessage.innerHTML = `<span>Oops! Escriba un Correo Valido...</span>`;
                     }else {
                         formMessage.innerHTML = `<span>${err}</span>`;
                     }

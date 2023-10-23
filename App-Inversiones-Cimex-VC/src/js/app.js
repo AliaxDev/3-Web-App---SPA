@@ -1,5 +1,3 @@
-//import DATA
-
 
 // ********** set date ************
 // select span
