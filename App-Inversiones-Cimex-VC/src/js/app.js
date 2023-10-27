@@ -151,17 +151,17 @@ const data = [
   {
     img: './file/img/team-3.jpg',
     name: 'Dianet Cabanes Martinez',
-    job: 'Arquitecta',
+    job: 'Ms.Arquitecta',
     text: `Esp.B Construcción e Inversiones<br><br>"...Si una obra es intensa, válida y tiene una idea potente hará que las imperfecciones queden en un segundo plano...."`,
   },
   {
     img: './file/img/team-4.webp',
     name: 'Ania Gonzales Fernandez',
-    job: 'Lic.Contabilidad y Finanzas',
+    job: 'Lic.Economía',
     text: `Esp.C Económica<br><br>..."Me gusta trabajar en focada en la calidad de mi trabajo, nunca dejo nada para mañana!...`,
   },
 ];
-//************************************************************************************************************************************************************** */
+//************************************************************************************************************************************************************************/
 
 // ********** slider-team ************
 const sliderContainer = document.querySelector('.slider-container')
