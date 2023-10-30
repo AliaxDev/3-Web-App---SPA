@@ -137,22 +137,16 @@ about.addEventListener("click", function (e) {
 //******** DATA-team *********/
 const data = [
   {
-    img: './',
-    name: 'Danivia Palamaz Moreno',
-    job: 'Ing. Industrial',
-    text: `Jefa del Grupo de Inversiones<br><br>..."Déjame contarte el secreto que me ha llevado a logar mis objetivo. Mi fuerza reside únicamente en mi tenacidad...!!`,
-  },
-  {
-    img: './file/img/team-2.jpg',
-    name: 'Leandro E.Pérez',
-    job: 'Arquitecto',
-    text: `Esp.B Construcción e Inversiones<br><br>"...Todas las personas tienen la disposición de trabajar creativamente. Lo que sucede es que la mayoría jamás lo nota!!"`,
-  },
-  {
-    img: './file/img/team-3.jpg',
+    img: './file/img/team-3.webp',
     name: 'Dianet Cabanes Martinez',
     job: 'Ms.Arquitecta',
     text: `Esp.B Construcción e Inversiones<br><br>"...Si una obra es intensa, válida y tiene una idea potente hará que las imperfecciones queden en un segundo plano...."`,
+  },
+  {
+    img: './file/img/team-2.webp',
+    name: 'Leandro E.Pérez',
+    job: 'Arquitecto',
+    text: `Esp.B Construcción e Inversiones<br><br>"Todas las personas tienen la disposición de trabajar creativamente. Lo que sucede es que la mayoría jamás lo nota!!"`,
   },
   {
     img: './file/img/team-4.webp',
@@ -160,6 +154,12 @@ const data = [
     job: 'Lic.Economía',
     text: `Esp.C Económica<br><br>..."Me gusta trabajar en focada en la calidad de mi trabajo, nunca dejo nada para mañana!...`,
   },
+  {
+    img: './file/img/team-1.webp',
+    name: 'Danivia Palamaz Moreno',
+    job: 'Ing. Industrial',
+    text: `Jefa del Grupo de Inversiones<br><br>..."Déjame contarte el secreto que me ha llevado a logar mis objetivo. Mi fuerza reside únicamente en mi tenacidad...!!`,
+  }
 ];
 //************************************************************************************************************************************************************************/
 
