@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../src/style/style-form.css">
     <link rel="stylesheet" href="../src/style/style-vista-gallery.css">
     <link rel="stylesheet" href="../src/style/style-gallery.css">
+    <link rel="stylesheet" href="../src/style/style-gallery-movile.css">
 
 
 </head>
@@ -55,36 +56,131 @@
             </div>
         </nav>
 
+        <div class="gallery-container-movile" style="display: none;">
+            <article id="slider-movile">
+
+                <input class="input-radio" checked type='radio' name='slider' id='slide1' />
+                <input class="input-radio" type='radio' name='slider' id='slide2' />
+                <input class="input-radio" type='radio' name='slider' id='slide3' />
+                <input class="input-radio" type='radio' name='slider' id='slide4' />
+                <input class="input-radio" type='radio' name='slider' id='slide5' />
+                <div id="slides-movile">
+                    <div id="container-movile">
+                        <div class="inner">
+
+                            <article class="article-slider">
+                                <div class='caption'>
+                                    <bar>SC Quemadense: Tanques de Combustible</bar>
+                                </div>
+                                <img src="../file/img/obras/SC-Quemadense/1.webp" />
+                            </article>
+                            <article class="article-slider">
+                                <div class='caption'>
+                                    <bar>SC Quemadense: Foso enterramiento de Tanques</bar>
+                                </div>
+                                <img src="../file/img/obras/SC-Quemadense/2.webp" />
+                            </article>
+                            <article class="article-slider">
+                                <div class='caption'>
+                                    <bar>SC Quemadense: Foso para soterrar</bar>
+                                </div>
+                                <img src="../file/img/obras/SC-Quemadense/3.webp" />
+                            </article>
+                            <article class="article-slider">
+                                <div class='caption'>
+                                    <bar>SC Quemadense: Tankes</bar>
+                                </div>
+                                <img src="../file/img/obras/SC-Quemadense/4.webp" />
+                            </article>
+                            <article class="article-slider">
+                                <div class='caption'>
+                                    <bar>SC Quemadense: Tankes</bar>
+                                </div>
+                                <img src="../file/img/obras/SC-Quemadense/5.webp" />
+                            </article>
+                            <article class="article-slider">
+                                <div class='caption'>
+                                    <bar>SC Quemadense: Tankes</bar>
+                                </div>
+                                <img src="../file/img/obras/SC-Quemadense/6.webp" />
+                            </article>
+                            <article class="article-slider">
+                                <div class='caption'>
+                                    <bar>SC Quemadense: Tankes</bar>
+                                </div>
+                                <img src="../file/img/obras/SC-Quemadense/7.webp" />
+                            </article>
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div id="commands">
+                    <label for='slide1'></label>
+                    <label for='slide2'></label>
+                    <label for='slide3'></label>
+                    <label for='slide4'></label>
+                    <label for='slide5'></label>
+                    <label for='slide6'></label>
+                    <label for='slide7'></label>
+                </div>
+                <div id="active">
+                    <label for='slide1'></label>
+                    <label for='slide2'></label>
+                    <label for='slide3'></label>
+                    <label for='slide4'></label>
+                    <label for='slide5'></label>
+                    <label for='slide6'></label>
+                    <label for='slide7'></label>
+                </div>
+            </article>
+        </div>
+
         <div class="gallery-container">
 
             <!-- Galery -->
-            <div class="galery-container" >
+            <div class="galery-container">
                 <div class="slider" id="slider"
                     style="--img-prev:url(https://lh3.googleusercontent.com/aC9nyW5dhaYFmWD8fcf8DApjpH08eHEkbCHqmUPHRQ5T3jK-QyNKZYVMehmrvyPdEA_KxWvgZ3_kyOOYOAv99Ow3UoKSvEloleVKGSfLOwOyDV3Q6Dwi1G-NYoa9-t_ofmmskE6BYnVIOnIz2HWlMcijzIEwvKAL_R4z63DaLgG0z_OcGiSQHunwGAPXrBQUv42ZXuIMODq4zxDHczSxJ72b0-_udtdQK3JuT2X8nXCwFoF7GxmOpzXS0H5f50DuCbXoXcx-O7bgBMCXZdMpTxB27-wdXeLmxpYUySXgjSN2NAKmK16DmGLYvw5tMlrqwb8h4MJEEbXjP1pjPxXsahb7UZseEGyn80uLjATANJvusyJWCtzkkxYXPz-yI1rDvfEJKe2eyA-5AvFlzFBSwBMASn8f7mXinUrXMMREkJQjoi89NfZ91G7253OEVQOqcWxddiYtcHCO5v6Pl3QfV2SUTWXgggscDSY2ezjSPpYERNTXnIM_aCyWmIG7ybrfqOB0eVYBAgynyuPVbjd4KuZWZq2Dfu33HX1RuPKglbOuZGD1QbpJnruvUVkAmjDXI40ENN7X=w1600-h766);">
-                    <!-- https://lh3.googleusercontent.com/aC9nyW5dhaYFmWD8fcf8DApjpH08eHEkbCHqmUPHRQ5T3jK-QyNKZYVMehmrvyPdEA_KxWvgZ3_kyOOYOAv99Ow3UoKSvEloleVKGSfLOwOyDV3Q6Dwi1G-NYoa9-t_ofmmskE6BYnVIOnIz2HWlMcijzIEwvKAL_R4z63DaLgG0z_OcGiSQHunwGAPXrBQUv42ZXuIMODq4zxDHczSxJ72b0-_udtdQK3JuT2X8nXCwFoF7GxmOpzXS0H5f50DuCbXoXcx-O7bgBMCXZdMpTxB27-wdXeLmxpYUySXgjSN2NAKmK16DmGLYvw5tMlrqwb8h4MJEEbXjP1pjPxXsahb7UZseEGyn80uLjATANJvusyJWCtzkkxYXPz-yI1rDvfEJKe2eyA-5AvFlzFBSwBMASn8f7mXinUrXMMREkJQjoi89NfZ91G7253OEVQOqcWxddiYtcHCO5v6Pl3QfV2SUTWXgggscDSY2ezjSPpYERNTXnIM_aCyWmIG7ybrfqOB0eVYBAgynyuPVbjd4KuZWZq2Dfu33HX1RuPKglbOuZGD1QbpJnruvUVkAmjDXI40ENN7X=w1600-h766 -->
                     <div class="slider__content" id="slider-content">
                         <div class="slider__images">
                             <div class="slider__images-item slider__images-item--active" data-id="1"><img
-                                    src="../file/img/sc-qumadense.webp" />
+                                    src="../file/img/obras/SC-Quemadense/1.webp" />
                             </div>
-                            <div class="slider__images-item" data-id="2"><img src="../file/img/sc-qumadense.webp">
+                            <div class="slider__images-item" data-id="2"><img
+                                    src="../file/img/obras/SC-Quemadense/2.webp">
                             </div>
-                            <div class="slider__images-item" data-id="3"><img src="../file/img/sc-qumadense.webp" />
+                            <div class="slider__images-item" data-id="3"><img
+                                    src="../file/img/obras/SC-Quemadense/3.webp" />
                             </div>
-                            <div class="slider__images-item" data-id="4"><img src="../file/img/sc-qumadense.webp" />
+                            <div class="slider__images-item" data-id="4"><img
+                                    src="../file/img/obras/SC-Quemadense/4.webp" />
                             </div>
-                            <div class="slider__images-item" data-id="5"><img src="../file/img/sc-qumadense.webp" />
+                            <div class="slider__images-item" data-id="5"><img
+                                    src="../file/img/obras/SC-Quemadense/5.webp" />
                             </div>
-                            <div class="slider__images-item" data-id="6"><img src="../file/img/sc-qumadense.webp">
+                            <div class="slider__images-item" data-id="6"><img
+                                    src="../file/img/obras/SC-Quemadense/6.webp">
                             </div>
-                            <div class="slider__images-item" data-id="7"><img src="../file/img/sc-qumadense.webp">
+                            <div class="slider__images-item" data-id="7"><img
+                                    src="../file/img/obras/SC-Quemadense/7.webp">
                             </div>
-                            <div class="slider__images-item" data-id="8"><img src="../file/img/sc-qumadense.webp">
+                            <div class="slider__images-item" data-id="8"><img
+                                    src="../file/img/obras/SC-Quemadense/8.webp">
                             </div>
-                            <div class="slider__images-item" data-id="9"><img src="../file/img/sc-qumadense.webp">
+                            <div class="slider__images-item" data-id="9"><img
+                                    src="../file/img/obras/SC-Quemadense/9.webp">
                             </div>
-                            <div class="slider__images-item" data-id="10"><img src="../file/img/sc-qumadense.webp">
+                            <div class="slider__images-item" data-id="10"><img
+                                    src="../file/img/obras/SC-Quemadense/10.webp">
                             </div>
+                            <div class="slider__images-item" data-id="11"><img
+                                    src="../file/img/obras/SC-Quemadense/11.webp">
+                            </div>
+                            <div class="slider__images-item" data-id="12"><img
+                                    src="../file/img/obras/SC-Quemadense/12.webp">
+                            </div>
+
                         </div>
                         <div class="slider__text">
                             <div class="slider__text-item slider__text-item--active" data-id="1">
@@ -92,80 +188,100 @@
                                     <h3>SC Quemadense</h3>
                                 </div>
                                 <div class="slider__text-item-info">
-                                    <p>“Obra en Ejecucion en el Municipio de Quemado de Guines. Foto: Tanques de Combustible por Colocar”</p>
+                                    <p>“Obra en Ejecucion en el Municipio de Quemado de Guines.”<br><strong>Foto:
+                                        </strong>Tanques de
+                                        Combustible por Colocar</p>
                                 </div>
                             </div>
                             <div class="slider__text-item" data-id="2">
                                 <div class="slider__text-item-head">
-                                    <h3>texto 2</h3>
+                                    <h3>SC Quemadense</h3>
                                 </div>
                                 <div class="slider__text-item-info">
-                                    <p>texto
-                                    </p>
+                                    <p><strong>Foto: </strong>Vista del foso sin anclajes</p>
                                 </div>
                             </div>
                             <div class="slider__text-item" data-id="3">
                                 <div class="slider__text-item-head">
-                                    <h3>texto 3</h3>
+                                    <h3>SC Quemadense</h3>
                                 </div>
                                 <div class="slider__text-item-info">
-                                    <p>texto</p>
+                                    <p><strong>Foto: </strong>Vista del Foso preparado con los anclajes de los Tanques
+                                    </p>
                                 </div>
                             </div>
                             <div class="slider__text-item" data-id="4">
                                 <div class="slider__text-item-head">
-                                    <h3>textos 4</h3>
+                                    <h3>SC Quemadense</h3>
                                 </div>
                                 <div class="slider__text-item-info">
-                                    <p>texto</p>
+                                    <p><strong>Foto: </strong>Foto de transportación de los tanques para colocación</p>
                                 </div>
                             </div>
                             <div class="slider__text-item" data-id="5">
                                 <div class="slider__text-item-head">
-                                    <h3>texto 5</h3>
+                                    <h3>SC Quemadense</h3>
                                 </div>
                                 <div class="slider__text-item-info">
-                                    <p>texto</p>
+                                    <p><strong>Foto: </strong>Detalles del los tanques de 50 000lts</p>
                                 </div>
                             </div>
                             <div class="slider__text-item" data-id="6">
                                 <div class="slider__text-item-head">
-                                    <h3>texto 6</h3>
+                                    <h3>SC Quemadense</h3>
                                 </div>
                                 <div class="slider__text-item-info">
-                                    <p>texto</p>
+                                    <p><strong>Foto: </strong>Repanteo de las tuberias soterradas de las redes técnicas
+                                    </p>
                                 </div>
                             </div>
                             <div class="slider__text-item" data-id="7">
                                 <div class="slider__text-item-head">
-                                    <h3>texto 7</h3>
+                                    <h3>SC Quemadense</h3>
                                 </div>
                                 <div class="slider__text-item-info">
-                                    <p>texto</p>
+                                    <p><strong>Foto: </strong>Otra vista mas completa de el repanteo de las tuberias
+                                        antes de ser soterradas</p>
                                 </div>
                             </div>
                             <div class="slider__text-item" data-id="8">
                                 <div class="slider__text-item-head">
-                                    <h3>texto 8</h3>
+                                    <h3>Proyecto</h3>
                                 </div>
                                 <div class="slider__text-item-info">
-                                    <p>texto</p>
+                                    <p><strong>Foto: </strong>Elevación Este desde el lateral de la obra</p>
                                 </div>
                             </div>
                             <div class="slider__text-item" data-id="9">
                                 <div class="slider__text-item-head">
-                                    <h3>texto 9</h3>
+                                    <h3>Proyecto</h3>
                                 </div>
                                 <div class="slider__text-item-info">
-                                    <p>texto</p>
+                                    <p><strong>Foto: </strong>Elevación Norte desde el Frente de la obra</p>
                                 </div>
                             </div>
                             <div class="slider__text-item" data-id="10">
                                 <div class="slider__text-item-head">
-                                    <h3>texto 10</h3>
+                                    <h3>Proyecto</h3>
                                 </div>
                                 <div class="slider__text-item-info">
-                                    <p>texto</p>
+                                    <p><strong>Foto: </strong>Elevación Sur desde la parte trasera de la obra</p>
+                                </div>
+                            </div>
+                            <div class="slider__text-item" data-id="11">
+                                <div class="slider__text-item-head">
+                                    <h3>Proyecto</h3>
+                                </div>
+                                <div class="slider__text-item-info">
+                                    <p><strong>Foto: </strong>Elevación Oste desde el lateral de la obra</p>
+                                </div>
+                            </div>
+                            <div class="slider__text-item" data-id="12">
+                                <div class="slider__text-item-head">
+                                    <h3>Proyecto</h3>
+                                </div>
+                                <div class="slider__text-item-info">
+                                    <p><strong>Foto: </strong>Imaginarios 3D de la obra</p>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +320,7 @@
 
             <!-- form-gif -->
             <article class="contact-me-img">
-                <img src="../file/img/animation-contact.gif" alt="animation-contact.gif" />
+                <img src="../file/img/Messaging-pana.svg" loading="lazy" alt="animation-contact.gif" />
             </article>
 
             <!-- form -->

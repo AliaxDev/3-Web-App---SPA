@@ -1064,3 +1064,17 @@ About
     min-width: 35vw;
   }
 }
+
+@media screen and (max-width: 660px) {
+  .gallery-container {
+    display: none;
+  }
+
+  .gallery-container-movile {
+    display: block !important;
+  }
+
+  #home {
+    min-height: 300px !important;
+  }
+}

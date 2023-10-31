@@ -15,7 +15,7 @@ async function handleSubmit(event) {
     }).then(response => {
 
         if (response.ok) {
-            
+
             formMessage.innerHTML = "<span>Enviado con EXITO!</span>...Gracias por Escribirnos!";
             formMessage.classList.toggle('hiden')
             formMessage.classList.remove('err')
@@ -30,23 +30,26 @@ async function handleSubmit(event) {
 
                     let err = data["errors"].map(error => error["message"]).join(", ");
 
-                    if(err == "should be an email"){
+                    if (err == "should be an email") {
                         formMessage.classList.remove('success')
                         formMessage.classList.add('err')
                         formMessage.innerHTML = `<span>Oops! Escriba un Correo Valido...</span>`;
-                    }else {
+                    } else {
                         formMessage.innerHTML = `<span>${err}</span>`;
                     }
-            
-                } else {
 
-                    formMessage.innerHTML = "Oops! Ha Habido un Problema!"
+                } else {
+                    formMessage.classList.remove('success')
+                    formMessage.classList.add('err')
+                    formMessage.innerHTML = `<span>Oops! Ha Habido un Problema!</span>`
                 }
             })
         }
 
     }).catch(error => {
-        formMessage.innerHTML = "Oops! Ha Habido un Problema!"
+        formMessage.classList.remove('success')
+        formMessage.classList.add('err')
+        formMessage.innerHTML = `<span>Oops! Sin Conexión!</span>`
     });
 }
 
